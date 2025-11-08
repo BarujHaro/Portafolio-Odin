@@ -1,0 +1,101 @@
+
+/*Content Section*/
+
+#content {
+  grid-row: 2 / 3;
+  padding: 2rem 1.2rem;
+ 
+}
+ 
+ 
+
+/*mobile: base style*/
+.worksDiv {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  gap: 1.5rem;
+}
+
+
+
+
+#content h1{
+  justify-content: center;
+  text-align: center;
+}
+
+/*Tablet - after 768px*/
+@media screen and (min-width: 768px) {
+
+  .worksDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr;  
+    grid-template-rows: 1fr 1fr 1fr; 
+    gap: 1.2rem; 
+  }
+
+}
+
+
+/*Computer - after 1024*/
+@media screen and (min-width: 1024px) {
+
+  .worksDiv {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;  
+    grid-template-rows: 1fr 1fr; 
+    gap: 1.2rem; 
+  }
+
+
+}
+
+
+
+.card {
+  background: white;
+  border-radius: 10px;
+ 
+  overflow: hidden;
+  transition: transform 0.3s;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.Project-img {
+  height: 13rem;
+}
+ 
+.Project-title {
+  display: flex;
+  align-items: center;        
+  justify-content: space-between;  
+ 
+  padding: 0.5rem 0.5rem;
+}
+
+.Project-title h3 {
+  margin: 0;                  
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.Project-icons {
+  display: flex;
+  align-items: center;         
+  gap: 1rem;         
+  padding: 0.2rem;    
+  margin-right: 0.5rem;    
+}
+.Project-icons .icons{
+  width: 2rem;
+  height: 2rem;
+}
+
+.card h3, .card p {
+  padding: 0.5rem 1rem;
+}

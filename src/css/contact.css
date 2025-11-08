@@ -1,0 +1,116 @@
+/*Contact Section*/
+ 
+#contact {
+  grid-row: 3 / 4;
+  background-color: #4A70A9;
+  padding: 2rem 1rem;
+ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+ 
+.contact-links{
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1.5rem;
+}
+.contact-info{
+  font-size: 1.2rem;
+  padding: 1rem;
+  margin: 0 auto;
+  white-space: normal;    
+  word-wrap: break-word;  
+  overflow-wrap: break-word;  
+}
+span {
+  font-weight: bold;
+}
+.contact-img {
+  width: 100%;
+ 
+  max-height: auto; 
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+  border-radius: 8px;
+}
+
+
+.contact-img img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;   
+}
+
+
+
+/*Tablet - after 768px*/
+@media screen and (min-width: 768px) {
+  .contact-cont{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .contact-img {
+    width: 60%;
+    height: 85%;
+     
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    transform: translateY(10%) translateX(35%);
+  }
+}
+
+/*Computer - after 1024*/
+@media screen and (min-width: 1024px) {
+  #contact {
+    max-height: 100%;  
+    justify-content: center;
+    padding: 0rem 1rem;
+  }
+
+  .contact-cont {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .contact-info {
+    flex: 1;
+    max-width: 70%;
+    text-align: left;
+    font-size: 1.5rem;
+    padding: 0rem;
+    margin: 0 auto;
+    white-space: normal;    
+    word-wrap: break-word;  
+    overflow-wrap: break-word;  
+}
+  
+  .contact-img {
+    max-width: 70%;
+    max-height: 85%;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.5);
+    border-radius: 8px;
+    transform: translateX(20%);
+  }
+  .contact-links{
+    padding: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2.5rem;
+  }
+  .contact-links .icons{
+  width: 3.5rem;
+  height: 3.5rem;
+  transition: transform 0.3s ease;  
+  }
+
+ 
+}
